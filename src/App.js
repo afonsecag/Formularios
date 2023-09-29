@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import LoginForm from './components/LoginForm';
+import CafeList from './components/CafeList';
+import CafeDetail from './components/CafeDetail';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [authenticated, setAuthenticated] = useState(false);
+    const [selectedCafeId, setSelectedCafeId] = useState(null);
+
+    if (!authenticated) {
+        return <LoginForm onAuthenticate={() => setAuthenticated(true)} />;
+    }
+
+    if (selectedCafeId) {
+        return <CafeDetail cafeId={selectedCafeId} onBack={() => setSelectedCafeId(null)} />;
+    }
+
+    return <CafeList onSelectCafe={(id) => setSelectedCafeId(id)} />;
 }
 
 export default App;
