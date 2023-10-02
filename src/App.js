@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
-import LoginForm from './components/LoginForm';
-import CafeList from './components/CafeList';
-import CafeDetail from './components/CafeDetail';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import './App.css';
+import Login from './login';
+import Cafes from './cafe';
 
 function App() {
-    const [authenticated, setAuthenticated] = useState(false);
-    const [selectedCafeId, setSelectedCafeId] = useState(null);
-
-    if (!authenticated) {
-        return <LoginForm onAuthenticate={() => setAuthenticated(true)} />;
-    }
-
-    if (selectedCafeId) {
-        return <CafeDetail cafeId={selectedCafeId} onBack={() => setSelectedCafeId(null)} />;
-    }
-
-    return <CafeList onSelectCafe={(id) => setSelectedCafeId(id)} />;
+  return (
+    <div className="App">
+      <header className="App-header">
+        <BrowserRouter>
+            <Routes>
+            <Route path="/" element={<Login/>} />
+            <Route path="/cafes" element={<Cafes/>} />
+            </Routes>
+        </BrowserRouter>
+      </header>
+    </div>
+  );
 }
 
 export default App;

@@ -1,0 +1,16 @@
+{
+    "The magical scent": "El aroma mágico",
+    "Name": "Nombre",
+    "Type": "Tipo",
+    "Region": "Region",
+    "Notes": "Notas",
+    "Grown at height of": "Cultivado a una altura de",
+    "masl": "msnm",
+    "User": "Nombre de usuario",
+    "Password": "Contraseña",
+    "Login": "Inicio de sesión",
+    "Submit": "Ingresar",
+    "Cancel": "Cancelar",
+    "Authentication error": "Error de autenticación. Revise sus credenciales",
+    "Action cancel": "Inicio de sesión cancelado"
+}

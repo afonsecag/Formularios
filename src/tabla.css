@@ -1,0 +1,59 @@
+#cardCafe {
+    background-color: #f9f1f1;
+    width: 20rem;
+    height: 100%;
+    margin-left: 5rem;
+    border-color: black;
+    border: 2px solid black;
+    text-align: center;
+
+
+}
+
+.linea {
+    border: none; 
+    border-top: 1px solid black; 
+  }
+
+table{
+    table-layout: fixed;
+  }
+  
+  #TablaPersonalizada th{
+    width: 5rem;
+    overflow: auto;
+    background-color: #333A40;
+    color: white;
+  }
+
+#nombreCafe {
+    font-weight: bold;
+}
+
+.table {
+    width: 60rem;
+}
+
+#imagenCafe {
+    width: 12rem;
+    height: 12rem;
+}
+
+#alturaCafe {
+    font-weight: bolder;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#textAdicional {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#tablaHover:hover {
+    cursor: pointer;
+}
+
+#tablaHecha {
+    display: flex;
+}

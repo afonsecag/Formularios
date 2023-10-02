@@ -1,0 +1,78 @@
+.container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+#titulo {
+    color: black;
+}
+
+#imagenInicio {
+    width: 100%;
+}
+
+#formCompleto {
+    
+    margin-left: 15rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 881px;
+    height: 353px;
+
+
+}
+
+#formDentro {
+    padding-top: 1rem;
+    background-color: #f9f1f1;
+    border: 2px solid black;
+ 
+}
+
+.inputLogin {
+    background-color: #D9D9D9;
+    height: 58px;
+    width: 556px;
+    border-color: transparent;
+    margin-left: 10rem;
+}
+
+.boton {
+    width: 253px;
+    font-size: 1.5rem;
+    border-color: transparent;
+    height: 53px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+#cancelar{
+    margin-left: 3rem;
+    background-color: #E75D5D;
+}
+
+#aceptar {
+    background-color: #8FA98F;
+    margin-left: 10rem;
+}
+
+.divAbajo {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#nombre {
+    margin-left: 10rem;
+}
+
+#contraseña {
+    margin-left: 10rem;
+}
+
+#error {
+    color:#E75D5D;
+    text-align: center;
+
+
+}
